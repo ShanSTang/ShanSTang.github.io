@@ -1,0 +1,190 @@
+html, header, body, div, span, p, h1, h2, h3, h4, h5, h6, p, img {
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+@font-face {
+	font-family: dekko;
+	src: url(../fonts/Dekko-Regular.ttf)
+}
+
+
+@font-face {
+	font-family: openSans;
+	src: url(../fonts/OpenSans-VariableFont_wdth,wght.ttf)
+}
+
+h1, h3, h5, h6 {
+	font-family: openSans, Helvetica, sans-serif;
+}
+
+a {
+	font-size: 3vh;
+	font-family: openSans, Helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+	display: block;
+	margin-right: 50px;
+	padding: 0;
+	font-size: 3vh;
+	font-family: openSans, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+li:last-child {
+	margin-right: 0px;
+}
+
+.topDiv {
+	height: 5vh;
+	background-color: #A4DDFF;
+}
+
+header {
+	display: flex;
+	padding-left: 50px;
+	height: 5vh;
+	margin-bottom: 20px;
+}
+
+.project{
+	height: auto;
+	overflow: hidden;
+}
+
+.bottomDiv {
+	position: relative;
+	display: flex;
+	height: 10vh;
+	overflow: hidden;
+	background-color: #A4DDFF;
+	justify-content: center;
+    	align-items: center;
+	margin-top: 10vh;
+	font-family: openSans, Helvetica, sans-serif;
+}
+
+.brief {
+	padding-top: 10px;
+	padding-bottom: 40px;
+	background-color: #7653A6;
+	color: white;
+}
+
+h2 {
+	margin: 30px;
+	font-family: openSans;
+	font-size: 28px;
+	text-align: left;
+}
+
+.briefTitle {
+	text-align: center;
+}
+
+
+h4 {
+	margin: 40px 25px;
+	font-family: openSans;
+	font-weight: normal;
+	font-size: 28px;
+	text-align: center;
+}
+
+.col1 {
+	float: left;
+	width: 60%;
+}
+
+.col2 {
+	float: left;
+	width: 40%;
+	align-items: center;
+}
+
+p {
+	margin: 40px 30px;
+	font-family: openSans;
+	font-size: 20px;
+	text-align: left;
+}
+
+.teampic {
+	width: 100%;
+	height: auto;
+}
+
+.background, .designs, .intialWork, .problem, .newdesign{
+	height: auto;
+	overflow: hidden;
+}
+
+.imgCol {
+	display: block;
+	float: left;
+	width: 50%;
+	align-items: center;
+}
+
+h5 {
+	margin: 40px 25px;
+	font-family: openSans;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+
+img {
+	display: block;
+	align-items: center;
+	width: 80%;
+	height: auto;
+	margin: 40px;
+}
+
+
+@media screen and (max-width: 970px) {
+	header {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		justify-content: center;
+	}
+	ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		align-items: center;
+	}
+
+	li {
+		padding: 0;
+		margin: 0;
+	}
+
+	li:first-child {
+		margin-right: 50px;
+	}
+
+	li:last-child {
+		display: none;
+	}
+	.col1, .col2, .imgCol {
+		width: 100vw;
+	}
+}
